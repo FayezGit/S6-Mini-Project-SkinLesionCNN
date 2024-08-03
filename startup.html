@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Skin Lesion Analyzer</title>
+    <link rel="icon" type="image/png" href="assets/robotfavicon.png" />
+    <link rel="stylesheet" href="css/style3.css" />
+  </head>
+  <body style="background-image: url('images/backround.jpeg')">
+    <div class="container">
+      <button class="btn js-check-button">Check Result</button>
+      <button class="btn js-new-session-button">New Session</button>
+      <button class="btn js-new-logout-button">Logout</button>
+    </div>
+
+    <script>
+      const checkButton = document.querySelector(".js-check-button");
+      checkButton.addEventListener("click", redirectFunction1);
+
+      function redirectFunction1() {
+        location.href = "result/results.php";
+      }
+
+      const sessionButton = document.querySelector(".js-new-session-button");
+      sessionButton.addEventListener("click", redirectFunction2);
+
+      function redirectFunction2() {
+        location.href = "ques.php";
+      }
+
+      const logoutButton = document.querySelector(".js-new-logout-button");
+      logoutButton.addEventListener("click", redirectFunction3);
+
+      function redirectFunction3() {
+        location.href = "login.php";
+      }
+    </script>
+  </body>
+</html>

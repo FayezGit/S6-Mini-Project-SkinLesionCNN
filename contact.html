@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--CSS Stylesheets-->
+    <link rel="stylesheet" href="css/w3.css" />
+    <link rel="stylesheet" href="css/woza.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+
+    <!--Link to Font Awesome icons-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+      integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+      crossorigin="anonymous"
+    />
+
+    <!--Link to fonts from google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:300"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="assets/robotfavicon.png" />
+  </head>
+
+  <body class="bground-color">
+    <!-- w3-content defines a container for fixed size centered content,
+	and is wrapped around the whole page content. -->
+    <div style="max-width: 1500px">
+      <!-- 1. HOME PAGE TAB -->
+      <div class="w3-animate-opacity w3-padding w3-margin-bottom bground-color">
+        <!-- 960 width region -->
+
+        <div class="w3-center title adjust-fontcolor logo w3-center w3-margin">
+          <img
+            class="w3-round"
+            src="assets/robot.jpg"
+            alt="robot"
+            height="200"
+            width="200"
+          />
+        </div>
+        <!-- Top Bar -->
+
+        <div class="w3-center title adjust-fontcolor logo w3-center w3-margin">
+          <h1 class="space-letters w3-text-pink"><b>Urgent Contacts</b></h1>
+        </div>
+
+        <body>
+          <div class="container">
+            <form>
+              <h3>Get in touch with us</h3>
+              <input type="text" id="name" placeholder="YOUR NAME" required />
+              <input type="text" id="email" placeholder="EMAIL ID" required />
+              <input
+                type="text"
+                id="phone"
+                placeholder="PHONE NUMBER"
+                required
+              />
+              <textarea
+                name=""
+                id="message"
+                rows="4"
+                placeholder="HOW CAN WE ASSIST"
+              ></textarea>
+              <button type="submit" onclick="sendMail()">Send</button>
+            </form>
+          </div>
+
+          <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+          ></script>
+          <script src="script.js"></script>
+          <script type="text/javascript">
+            (function () {
+              emailjs.init({
+                publicKey: "eYjUe3spjrFhbsrQz",
+              });
+            })();
+          </script>
+        </body>
+      </div>
+      <!--END OF HOME PAGE TAB-->
+    </div>
+    <!-- w3-content -->
+  </body>
+</html>
