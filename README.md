@@ -13,7 +13,7 @@ This project focuses on developing a skin disease classifier to analyze peopleâ€
 
 ## Accessing Website
 
-To access the project website, please click [here](http://fayezminiproject.atwebpages.com/login.php).
+To access the project website online, please click [here](http://fayezminiproject.atwebpages.com/login.php).
 
 ## Acknowledgements
 
