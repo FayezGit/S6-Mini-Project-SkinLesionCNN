@@ -17,7 +17,7 @@ if(isset($_POST['signUp'])){
         $insertQuery="INSERT INTO users(Fname,Lname,email,password)
                        VALUES ('$Fname','$Lname','$email','$password')";
         if($conn->query($insertQuery) === TRUE){
-            header("location: index.php");
+            header("location: ../index.php");
         }
         else{
             echo "Error:".$conn->error;
@@ -35,7 +35,7 @@ if(isset($_POST['signIn'])){
    if($result->num_rows > 0){
     session_start();
     $_SESSION['email']=$email; // Store email in session
-    header("Location: startup.html");
+    header("Location: ../startup.html");
     exit();
    }
    else{
