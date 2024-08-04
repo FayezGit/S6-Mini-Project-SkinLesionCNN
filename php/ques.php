@@ -36,7 +36,7 @@ else{
             color: white;
             font-family: Arial, sans-serif;
             margin: 20px;
-            background-image: url('images/cover2.jpg');
+            background-image: url('../images/cover2.jpg');
         }
         label {
             display: block;
