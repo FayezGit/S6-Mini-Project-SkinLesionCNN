@@ -1,6 +1,6 @@
 <?php
 
-require 'connection/connect.php';
+require 'connect.php';
 
 if(isset($_POST['submit'])){
   $age = $_POST["age"];
