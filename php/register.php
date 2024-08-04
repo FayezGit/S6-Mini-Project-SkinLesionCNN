@@ -1,5 +1,5 @@
 <?php 
-include 'connection/connect.php';
+include 'php/connect.php';
 
 if(isset($_POST['signUp'])){
     $Fname=$_POST['Fname'];
