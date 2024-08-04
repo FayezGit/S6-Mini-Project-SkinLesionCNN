@@ -5,7 +5,7 @@
     <link rel="icon" type="image/png" href="assets/robotfavicon.png" />
     <link rel="stylesheet" href="css/style3.css" />
   </head>
-  <body style="background-image: url('images/backround.jpeg')">
+  <body style="background-image: url('images/background.jpeg')">
     <div class="container">
       <button class="btn js-check-button">Check Result</button>
       <button class="btn js-new-session-button">New Session</button>
@@ -17,21 +17,21 @@
       checkButton.addEventListener("click", redirectFunction1);
 
       function redirectFunction1() {
-        location.href = "result/results.php";
+        location.href = "php/results.php";
       }
 
       const sessionButton = document.querySelector(".js-new-session-button");
       sessionButton.addEventListener("click", redirectFunction2);
 
       function redirectFunction2() {
-        location.href = "ques.php";
+        location.href = "php/ques.php";
       }
 
       const logoutButton = document.querySelector(".js-new-logout-button");
       logoutButton.addEventListener("click", redirectFunction3);
 
       function redirectFunction3() {
-        location.href = "login.php";
+        location.href = "index.php";
       }
     </script>
   </body>

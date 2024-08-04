@@ -72,7 +72,7 @@ async function model_makePrediction(fname) {
 function sendDataToPHP(className, probability) {
   $.ajax({
     type: "POST",
-    url: "jscript/insert_data.php",
+    url: "php/insert_data.php",
     data: { className: className, probability: probability },
     success: function (response) {
       console.log(response); // Log the response from PHP (optional)

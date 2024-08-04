@@ -61,7 +61,7 @@ $("#predict-button").click(async function () {
   // Notice the await and async keywords are used together.
 
   // TARGET_CLASSES is defined in the target_clssses.js file.
-  // There's no need to load this file because it was imported in index.html
+  // There's no need to load this file because it was imported in home.html
   let predictions = await model.predict(tensor).data();
   let top5 = Array.from(predictions)
     .map(function (p, i) {
@@ -97,7 +97,7 @@ $("#predict-button").click(async function () {
 function sendDataToPHP(className, probability) {
   $.ajax({
     type: "POST",
-    url: "jscript/insert_data.php",
+    url: "php/insert_data.php",
     data: { className: className, probability: probability },
     success: function (response) {
       console.log(response); // Log the response from PHP (optional)

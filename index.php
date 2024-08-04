@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register & Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="connection/style.css">
+    <link rel="stylesheet" href="css/connection.css">
 </head>
 <body>
     <div class="container" id="signup" style="display:none;">
       <h1 class="form-title">Register</h1>
-      <form method="post" action="register.php">
+      <form method="post" action="php/register.php">
         <div class="input-group">
            <i class="fas fa-user"></i>
            <input type="text" name="Fname" id="Fname" placeholder="First Name" required>
@@ -48,7 +48,7 @@
 
     <div class="container" id="signIn">
         <h1 class="form-title">Sign In</h1>
-        <form method="post" action="register.php">
+        <form method="post" action="php/register.php">
           <div class="input-group">
               <i class="fas fa-envelope"></i>
               <input type="email" name="email" id="email" placeholder="Email" required>
@@ -76,6 +76,6 @@
           <button id="signUpButton">Sign Up</button>
         </div>
       </div>
-      <script src="connection/script.js"></script>
+      <script src="jscript/connection.js"></script>
 </body>
 </html>

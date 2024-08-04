@@ -16,7 +16,7 @@ if(isset($_POST['submit'])){
   $insert_query = "INSERT INTO ques_data(age,medical_condition,skin_issue,skin_treatment,allergies,skin_type,skin_area,skincare_products,other) VALUES('$age', '$medical_condition', '$skin_issue', '$skin_treatment', '$allergies', '$skin_type', '$skin_area', '$skincare_products', '$other')";
   mysqli_query($conn,$insert_query);
   if($conn->query($insert_query)==TRUE){
-    header("location: index.html");
+    header("location: home.html");
 }
 else{
     echo "Error:".$conn->error;
