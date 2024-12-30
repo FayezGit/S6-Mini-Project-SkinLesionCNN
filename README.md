@@ -15,7 +15,7 @@ The project focuses on developing a skin disease classifier to analyze people’
 
 To access the project website online, please click [here](http://fayezminiproject.atwebpages.com/index.php).
 
-### Training the Model
+## Training the Model
 
 There are two Jupyter notebooks provided for training the model:
 
