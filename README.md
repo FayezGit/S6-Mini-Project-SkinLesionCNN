@@ -22,7 +22,7 @@ There are two Jupyter notebooks provided for training the model:
 - **SkinLesionAnalyzer.ipynb**: This notebook is for training the model from scratch and includes data setup.
 - **SkinLesionAnalyzerWithLoadingModel.ipynb**: This notebook is for continuing training using a saved model, which was initially trained using the first notebook.
 
-#### Instructions:
+<u>Instructions</u>
 
 1. **Create a Google Drive folder** called **'Skin Lesion Project'**.
 2. **Upload the dataset** (zipped) into the **'Skin Lesion Project'** folder.
